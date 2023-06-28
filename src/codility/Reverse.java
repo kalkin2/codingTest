@@ -70,7 +70,7 @@ public class Reverse {
     int[] rotated = new int[arrayLength];
 
 
-    // 원본 array, 시작지점, 복사할 array, 복사할 array 시작지점, end idx
+    //System.arraycopy( 배열1, 배열1의 복사시작번호, 배열2, 배열2의 복사시작번호, 복사길이)
     System.arraycopy(array, arrayLength - endIdx, rotated, 0, endIdx);
     System.arraycopy(array, 0, rotated, endIdx, arrayLength - endIdx);
 
